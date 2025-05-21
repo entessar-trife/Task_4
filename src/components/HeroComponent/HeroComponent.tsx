@@ -8,7 +8,7 @@ function HeroComponent() {
       <img
         src="/Task_4/images/hero/heroImage.png"
         className="heroImg"
-        alt="hero image"/>
+        alt="hero image" />
       <div>
         <div className='px-162'>
           <TitleComponent

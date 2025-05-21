@@ -1,18 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import LoaderComponent from "../LoaderComponent/LoaderComponent";
 import AOS from "aos";
+import 'aos/dist/aos.css';
 
-export default function HandleLoadingComponent() {
-  const [loading, setLoading] = useState(true);
+interface Props {
+  children: ReactNode;
+};
+
+function HandleLoadingComponent({ children }: Props) {
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const handleLoad = () => {
+    const handleLoad = (): void => {
       setTimeout(() => {
         setLoading(false);
-        AOS.init();
+
+        AOS.init({
+          once: true,
+          duration: 1000,
+        });
         AOS.refresh();
-      }, 2000);
+      }, 2700);
     };
+
     if (document.readyState === "complete") {
       handleLoad();
     } else {
@@ -20,9 +30,12 @@ export default function HandleLoadingComponent() {
       return () => window.removeEventListener("load", handleLoad);
     }
   }, []);
+
   return (
     <>
-      {loading ? <LoaderComponent /> : <div></div>}
+      {loading ? <LoaderComponent /> : children}
     </>
   );
-}
+};
+
+export default HandleLoadingComponent
