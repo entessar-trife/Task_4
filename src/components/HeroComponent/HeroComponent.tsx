@@ -4,13 +4,12 @@ import './HeroComponent.css'
 
 function HeroComponent() {
   return (
-    <section className='hero'>
+    <section className='hero' data-aos="zoom-in">
       <img
         src="/Task_4/images/hero/heroImage.png"
         className="heroImg"
-        alt="hero image"
-        data-aos="fade-left"/>
-      <div data-aos="fade-right">
+        alt="hero image"/>
+      <div>
         <div className='px-162'>
           <TitleComponent
             HeadingTag="h1"
