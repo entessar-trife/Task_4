@@ -1,0 +1,192 @@
+.hero {
+  background-color: var(--blue-03);
+  height: 100vh;
+  padding-top: 130px;
+}
+
+.hero .titleComponent {
+  width: 40.7268%;
+  padding-top: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero .titleComponent h1 {
+  font-size: 70px;
+  line-height: 90px;
+}
+
+.hero .titleComponent p {
+  margin-top: 35px;
+  line-height: 35px;
+}
+
+.hero .heroInfo {
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 65.3909774%;
+  background-color: #FFFFFFCC;
+  backdrop-filter: blur(7px);
+  padding: 25px 70px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 10;
+  margin-left: 8.4375%;
+}
+
+.hero .heroInfo .heroInfoComponent {
+  gap: 20px;
+}
+
+.hero .heroInfo .heroInfoComponent div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero .heroInfo .heroInfoComponent img {
+  width: 60px;
+  height: 60px;
+  background-color: var(--blue-02);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.hero .heroInfo .heroInfoComponent h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.22px;
+  color: var(--black-color);
+}
+
+.hero .heroInfo .heroInfoComponent span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.22px;
+  color: var(--gray-01);
+}
+
+.hero .heroImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  .hero {
+    padding-top: 90px;
+  }
+
+  .hero .titleComponent {
+    width: 44.7797716%;
+    padding-top: 32px;
+  }
+
+  .hero .titleComponent h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .hero .titleComponent p {
+    margin-top: 20px;
+    line-height: 26px;
+  }
+
+  .hero .heroInfo {
+    width: 70.6362153%;
+    padding: 20px 58px;
+    gap: 63.68px;
+    margin-left: 5.12445095%;
+  }
+
+  .hero .heroInfo .heroInfoComponent {
+    gap: 20px;
+  }
+
+  .hero .heroInfo .heroInfoComponent h3 {
+    font-size: 16px;
+  }
+
+  .hero .heroInfo .heroInfoComponent span {
+    font-size: 16px;
+  }
+
+  .hero .heroImg {
+    width: 80%;
+  }
+}
+
+@media (max-width:1200px) {
+
+  .hero .titleComponent,
+  .hero .heroImg {
+    width: 100%;
+  }
+
+  .hero .heroInfo {
+    gap: 35px;
+    width: 80.6362153%;
+  }
+}
+
+@media (max-width:992px) {
+
+  .hero .heroInfo {
+    width: 100%;
+    padding: 20px;
+    gap: 29px;
+    border-radius: 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .hero {
+    padding-top: 132px;
+  }
+
+  .hero .titleComponent {
+    padding-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .hero .titleComponent h1 {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .hero .titleComponent p {
+    margin-top: 14px;
+    line-height: 20px;
+  }
+
+  .hero .heroInfo .heroInfoComponent {
+    gap: 24px;
+  }
+
+  .hero .heroInfo .heroInfoComponent div {
+    gap: 6px;
+  }
+
+  .hero .heroInfo .heroInfoComponent h3 {
+    font-size: 16px;
+  }
+
+  .hero .heroInfo .heroInfoComponent span {
+    font-size: 15px;
+  }
+
+  .hero .heroImg {
+    width: 100%;
+  }
+}

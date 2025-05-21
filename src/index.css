@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* start global classes */
+:root {
+  --black-color: #222222;
+  --white-color: #FFFFFF;
+
+  --gray-01: #22222280;
+  --gray-02: #F5F5F5;
+
+  --blue-01: #025595;
+  --blue-02: #D7E6EA;
+  --blue-03: #EFF8FF;
+}
+
+.px-162 {
+  padding-right: 8.4375%;
+  padding-left: 8.4375%;
+}
+
+.pb-120 {
+  padding-bottom: 6.25%;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* end global classes */
+
+
+/* Start Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--blue-03);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-02);
+  border-radius: 6px;
+  border: 1px solid var(--blue-01);
+}
+
+/* End Scrollbar Customization */
+
+/* start responsive  */
+@media (max-width:1500px) {
+  .px-162 {
+    padding-right: 5.12445095%;
+    padding-left: 5.12445095%;
+  }
+
+  .pb-120 {
+    padding-bottom: 6.88140556%;
+  }
+}
+
+@media (max-width:768px) {
+  .px-162 {
+    padding-right: 5.55555556%;
+    padding-left: 5.55555556%;
+  }
+
+  .pb-120 {
+    padding-bottom: 17.777777%;
+  }
+}

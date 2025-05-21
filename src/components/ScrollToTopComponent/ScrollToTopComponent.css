@@ -1,0 +1,52 @@
+.scrollBtn {
+  background-color: var(--blue-01);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  transition: .5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.scrollBtn.visible {
+  opacity: 1;
+}
+
+.scrollBtn:hover {
+  background-color: var(--blue-02);
+  border: 1px solid var(--blue-01);
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 10px var(--gray-01);
+}
+
+.scrollBtn:hover svg {
+  color: var(--blue-01);
+}
+
+.scrollBtn svg {
+  color: var(--white-color);
+  width: 30px;
+  height: 30px;
+}
+
+
+/* start responsive  */
+@media (max-width:992px) {
+  .scrollBtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scrollBtn svg {
+    width: 20px;
+    height: 20px;
+  }
+}

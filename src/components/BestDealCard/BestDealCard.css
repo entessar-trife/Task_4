@@ -1,0 +1,73 @@
+.bestDealCardComponent {
+  position: relative;
+  border-radius: 10px;
+  width: 30.7017544%;
+  overflow: hidden;
+}
+
+.bestDealCardComponent img {
+  width: 100%;
+  transition: .5s;
+}
+
+.bestDealCardComponent img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bestDealCardComponent div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.bestDealCardComponent div span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: #22222266;
+}
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  .bestDealCardComponent {
+    border-radius: 5px;
+    width: 31.6313214%;
+  }
+
+  .bestDealCardComponent div {
+    gap: 7px;
+    top: 14px;
+    left: 14px;
+  }
+
+  .bestDealCardComponent div span {
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width:992px) {
+  .bestDealCardComponent {
+    width: 48%;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .bestDealCardComponent {
+    width: 100%;
+  }
+}

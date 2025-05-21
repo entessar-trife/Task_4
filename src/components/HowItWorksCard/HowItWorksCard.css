@@ -1,0 +1,92 @@
+.howItWorksCard {
+  width: 29.075188%;
+  padding: 40px 48px 80px 48px;
+  border-radius: 15px;
+  transition: .5s;
+}
+
+.howItWorksCard.blue-card {
+  background-color: var(--blue-01);
+  cursor: pointer;
+}
+
+.howItWorksCard img {
+  width: 50px;
+}
+
+.howItWorksCard h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 26px 0 16px 0;
+}
+
+.howItWorksCard p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--gray-01);
+}
+
+.howItWorksCard.blue-card h3,
+.howItWorksCard.blue-card p {
+  color: var(--white-color);
+}
+
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  .howItWorksCard {
+    width: 30.995106%;
+    padding: 30px 40px 70px 40px;
+  }
+
+  .howItWorksCard img {
+    width: 42.11px;
+  }
+
+  .howItWorksCard h3 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+  }
+
+  .howItWorksCard p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width:1365px) {
+  .howItWorksCards {
+    gap: 30px;
+  }
+
+  .howItWorksCard h3 {
+    font-size: 15px;
+  }
+
+  .howItWorksCard p {
+    font-size: 12px;
+  }
+
+  .howItWorksCard {
+    width: 29.995106%;
+    padding: 30px 35px 50px 35px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .howItWorksCard {
+    width: 100%;
+    padding: 15px 17.5px 34px 17.5px;
+    border-radius: 10px;
+  }
+
+  .howItWorksCard img {
+    width: 37.68px;
+  }
+}

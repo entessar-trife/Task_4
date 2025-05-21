@@ -1,0 +1,25 @@
+.mostTrendingCards {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 35px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  .mostTrendingCards {
+    row-gap: 30px;
+    column-gap: 25px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .mostTrendingCards {
+    gap: 20px;
+  }
+}

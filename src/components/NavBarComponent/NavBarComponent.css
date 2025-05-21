@@ -1,0 +1,178 @@
+nav {
+  background-color: var(--blue-03);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: .5s;
+}
+
+nav.open {
+  background-color: var(--white-color);
+}
+
+nav.scrolled {
+  box-shadow: 1px 1px 30px var(--gray-01);
+}
+
+nav img {
+  width: 100px;
+}
+
+nav ul li {
+  transition: .5s ease-in-out;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+nav ul li a {
+  color: var(--black-color);
+}
+
+.mainNav li:hover {
+  background-color: var(--blue-01);
+  border-radius: 12px;
+}
+
+.mainNav li:hover a {
+  color: var(--gray-02);
+}
+
+nav button {
+  background-color: var(--blue-01);
+  border: 0;
+  color: var(--gray-02);
+  border-radius: 12px;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+nav button:hover {
+  background-color: var(--blue-02);
+  color: var(--blue-01);
+  border: 1px solid var(--blue-01);
+  transform: scale(1.1);
+}
+
+.openNavBtn,
+.closeNavBtn,
+.openNavBtn.open {
+  display: none;
+}
+
+.closeNavBtn.open {
+  display: block;
+}
+
+
+.openNavBtn,
+.closeNavBtn {
+  color: var(--blue-01);
+  cursor: pointer;
+}
+
+.openNavBtn {
+  width: 25px;
+  height: 17px;
+}
+
+.closeNavBtn {
+  width: 24px;
+  height: 24px;
+}
+
+.responsiveNav {
+  background-color: var(--white-color);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 97px;
+}
+
+.responsiveNav ul {
+  flex-direction: column;
+  gap: 32px;
+}
+
+.responsiveNav ul li {
+  border-top: 1px solid var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+  padding: 24px 20px;
+  width: 100%;
+  transition: .5s;
+}
+
+.responsiveNav ul li:hover {
+  border: 0;
+  background-color: var(--blue-02);
+  border-radius: 5px;
+}
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  nav {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  nav img {
+    width: 68.66px;
+  }
+
+  nav ul li {
+    font-size: 16px;
+  }
+
+  nav button {
+    border-radius: 6px;
+    padding: 10.5px 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:992px) {
+  nav ul li {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  nav img {
+    width: 45.92px;
+  }
+
+  .mainNav,
+  nav button {
+    display: none;
+  }
+
+  .openNavBtn,
+  .responsiveNav button {
+    display: block;
+  }
+
+  .responsiveNav button {
+    margin: 62.5px auto;
+    padding: 10.5px 69px;
+  }
+}

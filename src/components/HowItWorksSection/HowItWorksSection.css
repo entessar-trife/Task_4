@@ -1,0 +1,38 @@
+.howItWorksSection {
+  padding-top: 6.25%;
+}
+
+.howItWorksCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+  .howItWorksSection {
+    padding-top: 6.88140556%;
+  }
+
+  .howItWorksCards {
+    gap: 43px;
+  }
+}
+
+@media (max-width:1365px) {
+  .howItWorksCards {
+    gap: 30px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+  .howItWorksSection {
+    padding-bottom: 17.777777%;
+  }
+}

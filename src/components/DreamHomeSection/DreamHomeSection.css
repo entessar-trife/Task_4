@@ -1,0 +1,101 @@
+.contentContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.dreamHomeSection img {
+  width: 100%;
+  display: block;
+}
+
+.dreamHomeSection .dreamHomeTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.dreamHomeSection .dreamHomeTitle .titleComponent {
+  width: 87%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.dreamHomeSection .dreamHomeTitle h2 {
+  font-size: 75px;
+  line-height: 70px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.dreamHomeSection .dreamHomeTitle p {
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--white-color);
+  margin-top: 50px;
+}
+
+.dreamHomeSection .contentContainer .blackLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* start responsive  */
+@media (max-width:1500px) {
+
+  /* figma design */
+
+  .dreamHomeSection .dreamHomeTitle .titleComponent {
+    width: 89%;
+  }
+
+  .dreamHomeSection .dreamHomeTitle h2 {
+    font-size: 70px;
+    line-height: 56px;
+  }
+
+  .dreamHomeSection .dreamHomeTitle p {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 58px;
+  }
+}
+
+@media (max-width:1365px) {
+  .dreamHomeSection .dreamHomeTitle {
+    width: 100%;
+    padding: 0 11px;
+  }
+
+  .dreamHomeSection .dreamHomeTitle h2 {
+    font-size: 50px;
+  }
+
+  .dreamHomeSection .dreamHomeTitle p {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width:768px) {
+
+  /* figma design */
+
+  .dreamHomeSection .dreamHomeTitle .titleComponent {
+    width: 100%;
+  }
+
+  .dreamHomeSection .dreamHomeTitle h2 {
+    font-size: 30px;
+  }
+
+  .dreamHomeSection .dreamHomeTitle p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+}
